@@ -1,0 +1,30 @@
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #6B5B95;
+ }
+ 
+body {
+    margin: 0px;
+    min-height: 95%;
+    width: 95%;
+    background-color:RGB(136, 176, 80);
+    border: solid;
+    margin: auto;
+    position: relative;
+    align-content: center;
+    border-radius: 20px;
+  
+    
+ }
+
+
+.title-box{
+   /* background-color: rgb(205, 16, 16); */
+   font-family: 'Roboto';
+   position: relative;
+   text-align: center;
+   
+}
