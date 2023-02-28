@@ -28,3 +28,12 @@ body {
    text-align: center;
    
 }
+.game-box
+{
+   background-color: rgb(205, 16, 16);
+
+    
+}
+.players-choose{
+   background-color: aqua;
+}
