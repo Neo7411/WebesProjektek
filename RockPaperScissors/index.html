@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RockPaperScissors</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="game.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -13,11 +14,26 @@
         <h1>Rock Paper Scissors!</h1>
         <h2>Good luck have fun!</h2>
     </div>
-    <div class="game-box">
-
+    <div class="container">
+        <div class="game-box">
+            <div id="player">
+                <h3>Player</h3>
+                <img id="player-picture" src="Paper.png">
+                Score: <span id="player-score">0</span>
+            </div>
+            <div id="computer">
+                <h3>Computer</h3>
+                <img id="computer-picture" src="Scissors.png">
+                Score:<span id="computer-score">0</span>
+            </div>
+        </div>
+        <div id ="player-choise">
+            <h3 id="outtext">Choose your weapon</h3>
+            <input id="rock-button" onclick="input(id)" type="image" src="Rock.png">
+            <input id="paper-button" onclick="input(id)" type="image" src="Paper.png">
+            <input id="scissors-button" onclick="input(id)" type="image" src="Scissors.png">
+        </div>
     </div>
-    <div class="players-choose">
-
-    </div>
+    <script src="index.js".js"></script> 
 </body>
 </html>
