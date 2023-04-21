@@ -3,7 +3,7 @@
 // 2=scissors
 
 
-function input(a) {
+function input(a){
     var playerChoice;
 
     if(a=="rock-button"){
@@ -53,9 +53,6 @@ function input(a) {
         document.getElementById("outtext").innerHTML = "You Lose";
         n=2;
     }
-
-
-
     if(n==1){
         var score = document.getElementById("player-score").innerHTML;
         score++;

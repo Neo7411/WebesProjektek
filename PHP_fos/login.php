@@ -11,11 +11,11 @@ terpeszterez@citromail.hu   *       cukorka
 nagysanyi@gmail.hu          *       julcsika
 */
 
-function get_Titkos($Username){
-    $servername = "************";
-    $username = "************";
-    $password = "************";
-    $dbname = "************";
+function get_Secret($Username){
+    $servername = "127.0.0.1";
+    $username = "root";
+    $password = "";
+    $dbname = "projekt2";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -24,7 +24,7 @@ function get_Titkos($Username){
     die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "SELECT Titkos FROM webmeg_project_2 where Username = '$Username'";
+    $sql = "SELECT Titkos FROM webesProjekt2 where Username = '$Username'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -87,25 +87,26 @@ foreach (explode("\n", $decoded) as $line) {
 if ($correctPassword) {
     echo "Login successful!";
 
-    $Titkos = array(
+    $Secret = array(
         "piros" => "red",
         "zold" => "green",
         "sarga" => "yellow",
         "kek" => "blue",
         "fekete" => "black",
-        "feher" => "white"
+        "feher" => "white",
+        "lila" => "purple"
     );
 
-    $Titkos = $Titkos[get_Titkos($username)];
-    header("Location: index.php?response=Belépés sikeres!&Titkos=$Titkos");
+    $Secret = $Secret[get_Secret($username)];
+    header("Location: index.php?response=Login Sucsessful!&Secret=$Secret");
     
 } else {
     if (!isset($username) || $username == '') {
-        header("Location: index.php?response=Nincs ilyen felhasználó!");
+        header("Location: index.php?response=incorret user");
     } else if ($foundUsername) {
-        header("Location: index.php?response=Hibás jelszó!&redirect=police.hu&delay=3");
+        header("Location: index.php?response=Incorrect password!&redirect=police.hu&delay=3");
     } else {
-        header("Location: index.php?response=Nincs ilyen felhasználó!");
+        header("Location: index.php?response=Invalid username!&redirect=police.hu&delay=3");
     }
 }
 ?>
