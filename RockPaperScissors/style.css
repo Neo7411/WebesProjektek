@@ -3,31 +3,96 @@ html {
     height: 100%;
     width: 100%;
     display: flex;
-    background-color: #6B5B95;
+    padding:32px ;
+    background-color: #5faeb6;
+    color: #fff;
  }
  
 body {
     margin: 0px;
-    min-height: 95%;
-    width: 95%;
-    background-color:RGB(136, 176, 80);
-    border: solid;
+    min-height: 100%;
+    width: 100%;
+    background-color: #778892;
     margin: auto;
-    position: relative;
-    align-content: center;
     border-radius: 20px;
-  
-    
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+
  }
-
-
 .title-box{
-   /* background-color: rgb(205, 16, 16); */
+ 
    font-family: 'Roboto';
-   position: relative;
+
+}
+
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+.title-box h1{
+   font-size: 50px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-weight: 100;
+   text-transform: uppercase;
+   letter-spacing: 5px;
    text-align: center;
+}
+
+.title-box h2{
+   font-size: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-weight: 100;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   text-align: center;
+}
+.container{
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   justify-content: stretch;
+
+}
+.game-box{
+   flex: 1;
+   display: flex;
+   margin: 0px;
+   width: 95%;
+   align-items: center;
+   overflow: hidden;
+   justify-content: space-evenly;
+}
+img{
+   width: 140px;
+}
+
+.game-box > div{
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-weight: 100;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   text-align: center;
+}
+
+
+
+#player-choise > input{
+   height: 100px;
+   margin: 10px;
    
 }
+<<<<<<< HEAD
 
 .game-container{
    display: table;
@@ -43,4 +108,22 @@ body {
 }
 .players-choose{
    background-color: blue;
+=======
+ h3{
+   font-size: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-weight: 100;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   text-align: center;
+
+ }
+
+#player{
+
+>>>>>>> e1420fcc9afcd6befededd6b6e8d998bea64e430
+}
+#computer{
+
 }
