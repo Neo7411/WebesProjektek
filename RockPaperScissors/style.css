@@ -28,12 +28,19 @@ body {
    text-align: center;
    
 }
+
+.game-container{
+   display: table;
+   width: 40%;
+}
 .game-box
 {
    background-color: rgb(205, 16, 16);
-
+   position: relative;
+   min-height: 95%;
+   width: 95%;
     
 }
 .players-choose{
-   background-color: aqua;
+   background-color: blue;
 }
