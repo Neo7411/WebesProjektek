@@ -3,6 +3,7 @@
 // 2=scissors
 
 
+
 function input(a){
     var playerChoice;
 
